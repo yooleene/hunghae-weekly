@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>흥해교회 모바일 주보</title>
+  <link rel="dns-prefetch" href="//webzine.hunghae.com">
+  <link rel="preconnect" href="https://webzine.hunghae.com" crossorigin>
+  <script>
+    (function() {
+      if (window.location.search.indexOf('setup=1') !== -1) return;
+
+      var isIosApp = window.navigator.standalone === true;
+      var isAndroidApp = window.matchMedia('(display-mode: standalone)').matches && (window.outerHeight - window.innerHeight <= 50);
+
+      if (isIosApp || isAndroidApp) {
+        window.location.replace("https://webzine.hunghae.com/");
+      }
+    })();
+  </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background-color: #f3f4f6;
+      color: #111827;
+      margin: 0;
+      padding: 20px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .card {
+      max-width: 420px;
+      width: 100%;
+      padding: 32px 24px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+    h2 {
+      font-size: 22px;
+      margin: 0 0 14px;
+      color: #1e3a8a;
+      font-weight: 700;
+    }
+    p.desc {
+      font-size: 15px;
+      color: #4b5563;
+      line-height: 1.6;
+      margin: 0 0 26px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px 0;
+      background-color: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+    .note {
+      margin-top: 16px;
+      margin-bottom: 0;
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 22px;
+      padding-top: 14px;
+      border-top: 1px solid #f3f4f6;
+      font-size: 13px;
+      color: #4b5563;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>흥해교회 모바일 주보 안내</h2>
+    <p class="desc">
+      지금 이 화면을 <strong>북마크</strong>하거나 <strong>홈 화면에 추가</strong>해 주세요.<br>
+      다음부터는 아이콘이나 북마크를 누르자마자<br><strong>최신 주보로 바로 연결</strong>됩니다.
+    </p>
+
+    <a href="https://webzine.hunghae.com/" class="btn">이번 주 주보 바로 보기</a>
+
+    <p class="note">
+      ※ 먼저 <b>홈 화면 추가 또는 북마크</b>를 완료하신 뒤,<br>위 파란색 버튼을 눌러 이번 주 주보를 확인하세요.
+    </p>
+
+    <div class="footer">[문의] 유구봉 집사</div>
+  </div>
+</body>
+</html>
